@@ -10,6 +10,11 @@ models:
             tests:
                 - unique
                 - not_null
+          - name: name
+            description: "The name for this table"
+            tests:
+                - unique
+                - not_null
 
     - name: my_second_dbt_model
       description: "A starter dbt model"
